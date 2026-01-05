@@ -2,6 +2,12 @@
 
 A high-performance web scraper written in Rust to collect exhibitor data from CES 2026 (Consumer Electronics Show). This tool fetches comprehensive exhibitor information including company details, booth locations, product categories, and funding information.
 
+## Enriched Database
+
+Access the complete CES 2026 Exhibitor Database (enriched with funding & revenue data):
+
+**[View CES 2026 Exhibitor Database on Google Sheets](https://docs.google.com/spreadsheets/d/1p2KgnD3UI4qH8G3q0rD_hbdEfq480B-j/edit?usp=sharing&ouid=104753634455432639165&rtpof=true&sd=true)**
+
 ## Features
 
 - **Fast API-based scraping**: Uses the official CES exhibitor API for bulk data retrieval
@@ -31,7 +37,7 @@ A high-performance web scraper written in Rust to collect exhibitor data from CE
 | `funding_amount` | Funding amount sought |
 | `revenue` | Company revenue range |
 | `investment_stage` | Current investment stage |
-| `scraped_at` | Timestamp of data collection |
+| `country` | Company headquarters country |
 
 ## Prerequisites
 
@@ -63,8 +69,8 @@ The scraper operates in two phases:
 2. **Phase 2**: Enriches data by scraping individual exhibitor detail pages
 
 Output files are saved to the `output/` directory:
-- `all_exhibitors.json` - Full JSON export with metadata
-- `all_exhibitors.csv` - CSV export for spreadsheet use
+- `CES 2026 Exhibitor Database (Enriched with Funding & Revenue Data).json` - Full JSON export
+- `CES 2026 Exhibitor Database (Enriched with Funding & Revenue Data).csv` - CSV export for spreadsheet use
 
 ## Example Output
 
@@ -106,8 +112,8 @@ ces_2026_rust_scraper/
 ├── src/
 │   └── main.rs         # Main application code
 ├── output/             # Generated output files
-│   ├── all_exhibitors.json
-│   └── all_exhibitors.csv
+│   ├── CES 2026 Exhibitor Database (Enriched with Funding & Revenue Data).json
+│   └── CES 2026 Exhibitor Database (Enriched with Funding & Revenue Data).csv
 └── README.md
 ```
 
