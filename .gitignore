@@ -1,0 +1,14 @@
+# Build artifacts
+/target
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output data (optional - uncomment to exclude)
+# /output/
