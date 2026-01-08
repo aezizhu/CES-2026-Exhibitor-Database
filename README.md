@@ -1,4 +1,4 @@
-# CES 2026 Exhibitor Database
+# CES 2026 Exhibitor Database_bvio
 
 Comprehensive exhibitor information from CES 2026 (Consumer Electronics Show) including company details, booth locations, product categories, and funding information.
 
